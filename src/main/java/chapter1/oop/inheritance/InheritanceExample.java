@@ -4,9 +4,9 @@ public class InheritanceExample {
 
     public static void main(String[] args) {
 
-        Person b = new ProductOwner();
-        Person d = new Developer();
-        Person q = new QualityAnalyst();
+        Person po = new ProductOwner();
+        Person dev = new Developer();
+        Person qa = new QualityAnalyst();
 
 
     }

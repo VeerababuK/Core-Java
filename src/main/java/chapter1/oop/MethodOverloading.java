@@ -1,7 +1,5 @@
 package chapter1.oop;
 
-import chapter1.oop.Account;
-
 public class MethodOverloading {
 
     int add(int a, int b) {
