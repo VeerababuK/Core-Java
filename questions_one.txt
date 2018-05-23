@@ -1,0 +1,214 @@
+1. Which of the following data types will allow the following code snippet to compile?
+
+	float i=4;
+	float j=2;
+	____z=i+j;
+
+
+Options: 
+1. long
+2. double
+3. int 
+4. float
+5. byte
+
+
+2. Given:
+
+	abstract class X {
+		public abstract void methodX();
+	}
+
+	interface Y{
+		 public void methodY();
+	}
+
+	Which two code fragments are valid?
+
+	A)	class Z extends X implements Y {
+			public void methodZ(){}
+		}
+
+	B)	abstract class Z extends X implements Y {
+			public void methodZ(){}
+		}
+
+	C)	class Z extends X implements Y {
+			public void methodX(){}
+			public void methodY(){}
+		}
+
+
+	D)	abstract class Z extends X implements Y {
+		}
+
+	E)	class Z extends X implements Y {
+			public void methodY(){}
+		}
+		
+Options:
+1. Option A
+2. Option B
+3. Option C
+4. Option D
+5. Option E
+
+
+3. Given the classes:
+
+	* AssertionError
+	* ArithmeticException
+	* ArrayIndexOutOfBoundsException
+	* FileNotFoundException
+	* IllegalArgumentException
+	* IOError
+	* IOException
+	* NumberFormatException
+	* SQLException
+
+	Which option lists only those classes that belong to the unchecked exception category?
+
+Options:
+1. ArrayIndexOutOfBoundsException, ArithmeticException
+
+2. AssertionError, IOError, IOException
+
+3. ArithmeticException, FileNotFoundException, NumberFormatException
+
+4. FileNotFoundException, IOException, SQLException
+
+5. ArrayIndexOutOfBoundException, IllegalArgumentException, FileNotFoundException
+
+
+4. Given:
+
+	public class MarkList {
+		int num;
+		public static void graceMarks(MarkList obj4) {
+			obj4.num += 10;
+		}
+		public static void main(String[] args) {
+			MarkList obj1 = new MarkList();
+			MarkList obj2 = obj1;
+			MarkList obj3 = new MarkList();
+			obj2.num = 60;
+			graceMarks(obj2);
+		}
+	}
+
+	How many objects are created in the memory runtime?
+
+Options:
+1. 1
+2. 2
+3. 3
+4. 4
+
+
+5 Given:
+
+	public class MyClass {
+		public static void main(String[] args) {
+			while (int ii = 0; ii < 2) {
+				ii++;
+				System.out.println("ii = " + ii);
+			}
+		}
+	}
+	What is the result?
+
+Options:
+1. ii = 1 ii = 2
+2. Compilation fails
+3. The program prints nothing
+4. The program goes into an infinite loop with no output
+5. The program goes to an infinite loop outputting: ii = 1 ii = 1
+
+
+6. Which statement is true about the default constructor of a top-level class?
+
+Options:
+1. It can take arguments.
+2. It has private access modifier in its declaration.
+3. It can be overloaded.
+4. The default constructor of a subclass always invokes the no-argument constructor of its superclass.
+
+
+7. Given:
+
+	public class ComputeSum {
+		int x;
+		int y;
+		public int sum;
+		public ComputeSum (int nx, int ny) {
+			x = nx; y =ny;
+			updateSum();
+		}
+		public void setX(int nx) { x = nx; updateSum();}
+		public void setY(int ny) { x = ny; updateSum();}
+		void updateSum() { sum = x + y;}
+	}
+
+	This class needs to protect an invariant on the sum field.
+	Which three members must have the private access modifier to ensure that this invariant is maintained?
+
+Options:
+1. The x field
+2. The y field
+3. The sum field
+4. The ComputerSum ( ) constructor
+5. The setX ( ) method
+6. The setY ( ) method
+
+
+8. Given the code fragment:
+	public static void main(String[] args){
+		String date = LocalDate
+		.parse("2014-05-04")
+		.format(DateTimeFormatter.ISO_DATE_TIME) ;
+		System.out.println(new Date());
+		System.out.println(date);
+	}
+	What is the result?
+
+Options:
+1. May 04, 2014T00:00:00.000
+2. 2014-05-04T00:00: 00. 000
+3. 5/4/14T00:00:00.000
+4. An exception is thrown at runtime.
+
+
+9. Given:
+	class Mid {
+		public int findMid(int n1, int n2) {
+		return (n1 + n2) / 2;
+		}
+	}
+	public class Calc extends Mid {
+		public static void main(String[] args) {
+		int n1 = 22, n2 = 2;
+		//insert code here.
+		System.out.print(n3);
+		}
+	}
+	Which two code fragments, when inserted at // insert code here, enable the code to compile and print 12?
+
+Options:
+1. Calc c = new Calc(); int n3 = c.findMid(n1,n2);
+2. int n3 = super.findMid(n1,n3);
+3. Calc c = new Mid(); int n3 = c.findMid(n1, n2);
+4. Mid m1 = new Calc(); int n3 = m1.findMid(n1, n2);
+5. int n3 = Calc.findMid(n1, n2);
+
+10. Which of the following can fill in the blank in this code to make it compile? (Select 2 options.)
+	1. public void method()_____Exception {
+	2. ________Exception();
+	3. }
+
+Options:
+A. On line 1, fill in throws
+B. On line 1, fill in throws new
+C. On line 2, fill in throw new
+D. On line 2, fill in throws
+
+
