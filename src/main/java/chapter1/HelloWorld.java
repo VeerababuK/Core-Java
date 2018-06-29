@@ -1,8 +1,22 @@
 package chapter1;
 
 public class HelloWorld {
+    int x;
+    boolean b;
+    String z;
     public static void main(String[] args) {
         System.out.println("Hello World!");
+        int y;
+        y = 2;
+        System.out.println(y);
+        String x = 34 + "" ; // "false";
+
+        HelloWorld helloWorld = new HelloWorld();
+
+        System.out.println(helloWorld.x);
+        System.out.println(helloWorld.b);
+        System.out.println(helloWorld.z);
+
     }
 }
 

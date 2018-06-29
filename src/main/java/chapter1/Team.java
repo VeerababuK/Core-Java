@@ -1,9 +1,17 @@
 package chapter1;
 
 public class Team {
-    Member member;
+    private Member member;
 
     Team(Member member) {
+        this.member = member;
+    }
+
+    public Member getMember() {
+        return member;
+    }
+
+    public void setMember(Member member) {
         this.member = member;
     }
 
